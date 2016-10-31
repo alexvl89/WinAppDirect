@@ -69,7 +69,7 @@
             this.MyVAR.AutoSize = true;
             this.MyVAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MyVAR.ForeColor = System.Drawing.Color.Yellow;
-            this.MyVAR.Location = new System.Drawing.Point(232, 9);
+            this.MyVAR.Location = new System.Drawing.Point(269, 29);
             this.MyVAR.Name = "MyVAR";
             this.MyVAR.Size = new System.Drawing.Size(133, 39);
             this.MyVAR.TabIndex = 2;
