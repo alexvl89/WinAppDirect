@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.ComponentModel;
+
 
 namespace WinAppDirect
 {
@@ -16,7 +21,7 @@ namespace WinAppDirect
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new WinAppDirect());
         }
     }
 }
