@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WinAppDirect));
             this.MainTable = new System.Windows.Forms.Label();
-            this.ListMainT = new System.Windows.Forms.ListBox();
             this.winAppDirectDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.winAppDirectDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.MyVAR = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.ListMainT = new System.Windows.Forms.ListBox();
+            this.MyVAR = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.winAppDirectDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.winAppDirectDataSetBindingSource1)).BeginInit();
@@ -54,6 +54,18 @@
             this.MainTable.Size = new System.Drawing.Size(95, 20);
             this.MainTable.TabIndex = 0;
             this.MainTable.Text = "Table MainT";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.DoubleClick += new System.EventHandler(this.notifyIcon1_DoubleClick);
             // 
             // ListMainT
             // 
@@ -74,18 +86,6 @@
             this.MyVAR.Size = new System.Drawing.Size(133, 39);
             this.MyVAR.TabIndex = 2;
             this.MyVAR.Text = "MyVAR";
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
-            this.notifyIcon1.DoubleClick += new System.EventHandler(this.notifyIcon1_DoubleClick);
             // 
             // trackBar1
             // 
@@ -118,12 +118,12 @@
         #endregion
 
         private System.Windows.Forms.Label MainTable;
-        private System.Windows.Forms.ListBox ListMainT;
         private System.Windows.Forms.BindingSource winAppDirectDataSetBindingSource;
         private System.Windows.Forms.BindingSource winAppDirectDataSetBindingSource1;
-        private System.Windows.Forms.Label MyVAR;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ListBox ListMainT;
+        private System.Windows.Forms.Label MyVAR;
         private System.Windows.Forms.TrackBar trackBar1;
     }
 }
