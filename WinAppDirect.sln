@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAppDirect", "WinAppDirect\WinAppDirect.csproj", "{798FCE42-0A4B-4A47-9FD3-8D1BDEEBB722}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrightApp", "BrightApp\BrightApp.csproj", "{C0DBF354-594C-468A-ADBC-3810854EADD9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake_Study", "Snake_Study\Snake_Study.csproj", "{26132A58-BEAE-4A14-8BD5-8CEAC9CBE25C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{798FCE42-0A4B-4A47-9FD3-8D1BDEEBB722}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{798FCE42-0A4B-4A47-9FD3-8D1BDEEBB722}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{798FCE42-0A4B-4A47-9FD3-8D1BDEEBB722}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0DBF354-594C-468A-ADBC-3810854EADD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0DBF354-594C-468A-ADBC-3810854EADD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0DBF354-594C-468A-ADBC-3810854EADD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0DBF354-594C-468A-ADBC-3810854EADD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26132A58-BEAE-4A14-8BD5-8CEAC9CBE25C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26132A58-BEAE-4A14-8BD5-8CEAC9CBE25C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26132A58-BEAE-4A14-8BD5-8CEAC9CBE25C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26132A58-BEAE-4A14-8BD5-8CEAC9CBE25C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
