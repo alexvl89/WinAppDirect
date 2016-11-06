@@ -9,7 +9,7 @@ namespace Snake_Study
     class VerticalLine: Figure
     {
 
-        public VerticalLine(int x, int yUp, int yDown, char sym)
+        public VerticalLine(int yUp, int yDown, int x, char sym)
         {
             pList = new List<Point>();
             for (int y = yUp; y <= yDown; y++)

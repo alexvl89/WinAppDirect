@@ -17,16 +17,9 @@ namespace Snake_Study
             Console.SetWindowSize(x, y);
             Console.SetBufferSize(x, y);
 
- 
-            //отризовка рамки
-            HorizontalLine upline = new HorizontalLine(0,78,0,'+');
-            HorizontalLine downline = new HorizontalLine(0, 78, 24, '+');
-            VerticalLine leftline = new VerticalLine(0, 0, 24, '+');
-            VerticalLine rigthline = new VerticalLine(78, 0, 24, '+');
-            upline.Drow();
-            downline.Drow();
-            leftline.Drow();
-            rigthline.Drow();
+            Walls walls = new Walls(x, y);
+            walls.Draw();
+
 
             //отрисовка точек
             Point p = new Point(4, 5, '*');
@@ -38,18 +31,43 @@ namespace Snake_Study
             food.Draw();
 
 
+            //while (true)
+            //{
+            //    if (snake.Eat(food))
+            //    {
+            //        food = foodCreator.CreateFood();
+            //        food.Draw();                    
+            //    }
+            //    else
+            //    {
+            //        snake.Move();
+            //    }
+            //    Thread.Sleep(300);
+
+            //    if (Console.KeyAvailable)
+            //    {
+            //        ConsoleKeyInfo key = Console.ReadKey();
+            //        snake.HandlKey(key.Key);
+            //    }
+
+            //}
+
             while (true)
             {
+                if (walls.IsHit(snake) || snake.IsHitTail())
+                {
+                    break;
+                }
                 if (snake.Eat(food))
                 {
                     food = foodCreator.CreateFood();
-                    food.Draw();                    
+                    food.Draw();
                 }
                 else
                 {
                     snake.Move();
                 }
-                Thread.Sleep(300);
+                Thread.Sleep(100);
 
                 if (Console.KeyAvailable)
                 {
@@ -59,12 +77,13 @@ namespace Snake_Study
 
             }
 
-            
-    
-           // Console.ReadLine();
+            // Console.ReadLine();
         }
 
-
+        static void Draw(Figure figure)
+        {
+            figure.Drow();
+        }
 
     }
 }
