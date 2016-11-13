@@ -14,8 +14,19 @@ namespace Snake_Study
         {
             int x = 80;
             int y = 25;
+            
+            Console.WindowHeight = 25;
+            Console.WindowWidth = 80;
+            Console.Title = "Snake";
+            Console.CursorVisible = false;
+            Console.BufferHeight = 25;
+            Console.BufferWidth = 80;
             Console.SetWindowSize(x, y);
-            Console.SetBufferSize(x, y);
+            //Console.SetBufferSize(x, y);
+
+
+
+
 
             Walls walls = new Walls(x, y);
             walls.Draw();
@@ -30,27 +41,6 @@ namespace Snake_Study
             Point food = foodCreator.CreateFood();
             food.Draw();
 
-
-            //while (true)
-            //{
-            //    if (snake.Eat(food))
-            //    {
-            //        food = foodCreator.CreateFood();
-            //        food.Draw();                    
-            //    }
-            //    else
-            //    {
-            //        snake.Move();
-            //    }
-            //    Thread.Sleep(300);
-
-            //    if (Console.KeyAvailable)
-            //    {
-            //        ConsoleKeyInfo key = Console.ReadKey();
-            //        snake.HandlKey(key.Key);
-            //    }
-
-            //}
 
             while (true)
             {
